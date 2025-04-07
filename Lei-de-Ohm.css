@@ -1,0 +1,160 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    color: #343a40;
+}
+h3{
+    color: #343a40;
+}
+
+section {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #495057;
+}
+
+li{
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #495057;
+}
+
+.subtitulo{
+    color: white;
+}
+
+.content {
+    margin-bottom: 2em;
+}
+
+.img{
+    max-width: 700px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+/* Calculadora */
+.calculator-container {
+    background-color: #e9ecef;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+.form-group {
+    margin-bottom: 1.5em;
+}
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+input[type="text"], input[type="button"] {
+    padding: 0.8em;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+}
+input[type="button"] {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+input[type="button"]:hover {
+    background-color: #0ab150;
+}
+.result {
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Botão para abrir e fechar a calculadora */
+.container {
+    max-width: 10000px;
+    margin: 0 auto;
+}
+
+.topic-button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic-button:hover {
+    background-color: #45a049;
+}
+
+.topic-content {
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4CAF50;
+    margin-top: 5px;
+    overflow: hidden;
+    max-height: 0; /* Inicialmente fechado */
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+}
+
+
+
+
+
+/* Setas */
+.topic-button .arrow {
+    transition: transform 0.2s ease;
+}
+
+.active .topic-content {
+    max-height: 800px; /* Valor maior que 0 para mostrar o conteúdo */
+    padding: 10px 20px; /* Adiciona espaçamento quando aberto */
+}
+
+.active .arrow {
+    transform: rotate(90deg); /* Gira a seta */
+}
+
+.topic {
+    margin-bottom: 10px;
+}
